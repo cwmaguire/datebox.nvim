@@ -15,4 +15,5 @@ end
 -- Expose the function as a Neovim command
 vim.api.nvim_create_user_command('DateBox', M.show_datebox, {})
 
+-- Simple datebox plugin for Neovim
 return M
