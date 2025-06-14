@@ -37,7 +37,7 @@ function M.show_datebox()
     local strict_indexing = false
     local start_row = cursor_row
     local end_row = cursor_row
-    vim.api.nvim_buf_set_lines(current_buf, start, end, strict_indexing, lines_to_insert)
+    vim.api.nvim_buf_set_lines(current_buf, start_row, end_row, strict_indexing, lines_to_insert)
 
     -- Optionally, move the cursor to the middle of the inserted box (on the date line)
     -- This calculation places the cursor at the beginning of the date string
