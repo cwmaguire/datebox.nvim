@@ -35,8 +35,8 @@ function M.show_datebox()
     -- 'strict_indexing': start and end are exclusive for removal
     -- Here we want to insert, so start and end are the same, effectively inserting before that line.
     local strict_indexing = false
-    local start = cursor_row
-    local end = cursor_row
+    local start_row = cursor_row
+    local end_row = cursor_row
     vim.api.nvim_buf_set_lines(current_buf, start, end, strict_indexing, lines_to_insert)
 
     -- Optionally, move the cursor to the middle of the inserted box (on the date line)
