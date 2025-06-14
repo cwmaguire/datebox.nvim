@@ -24,7 +24,8 @@ function M.show_datebox()
     local lines_to_insert = {
         top_line,
         content_line,
-        bottom_line
+        bottom_line,
+	"" -- empty line
     }
 
     -- Get current buffer and cursor position
@@ -39,9 +40,9 @@ function M.show_datebox()
     local end_row = cursor_row
     vim.api.nvim_buf_set_lines(current_buf, start_row, end_row, strict_indexing, lines_to_insert)
 
-    -- Optionally, move the cursor to the middle of the inserted box (on the date line)
-    -- This calculation places the cursor at the beginning of the date string
-    vim.api.nvim_win_set_cursor(0, {cursor_row + 2, #padding + 1}) -- +2 for the middle line, +1 for initial |
+    local new_cursor_row = cursor_row + 4
+    local new_cursor_col = 0
+    vim.api.nvim_win_set_cursor(0, {new_cursor_row, new_cursor_col})
 end
 
 return M
