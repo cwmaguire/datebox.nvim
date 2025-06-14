@@ -41,7 +41,7 @@ function M.show_datebox()
 
     -- Optionally, move the cursor to the middle of the inserted box (on the date line)
     -- This calculation places the cursor at the beginning of the date string
-    vim.api.nvim_win_set_cursor(0, {cursor_row + 2, padding + 1}) -- +2 for the middle line, +1 for initial |
+    vim.api.nvim_win_set_cursor(0, {cursor_row + 2, #padding + 1}) -- +2 for the middle line, +1 for initial |
 end
 
 return M
