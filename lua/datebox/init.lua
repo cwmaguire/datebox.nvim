@@ -2,10 +2,9 @@
 -- "Please rewrite this plugin so that instead of printing out the datebox
 --  in the message area, it inserts the datebox as text at the cursor"
 
-┏━━━━━━━━━━━━━━━━┓
-┃   2025-06-14   ┃
-┗━━━━━━━━━━━━━━━━┛
-
+-- ┏━━━━━━━━━━━━━━━━┓
+-- ┃   2025-06-14   ┃
+-- ┗━━━━━━━━━━━━━━━━┛
 
 local M = {}
 
