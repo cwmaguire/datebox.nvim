@@ -15,7 +15,7 @@ function M.show_datebox()
     local date_length = #date
     local padding = "  "
     local box_width = date_length + (#padding * 2)
-    local line = string.rep("━", box.width)
+    local line = string.rep("━", box_width)
     local top_line = "┏" .. line .. "┓"
     local content_line = "┃" .. padding .. date .. padding .. "┃"
     local bottom_line = "┗" .. line .. "┛"
